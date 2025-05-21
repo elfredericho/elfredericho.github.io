@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Sultan Frederick - Web Developer</title>
+        <!-- Icon Web -->
+        <link rel="icon" href="./img/logo.png" type="image/x-icon"/>
+        <!-- Font -->
+        <link rel="stylesheet" href="style/style.css"/>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel='stylesheet' href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css'>
+    </head>
+    <body>
+        <!-- NAVBAR START -->
+        <header class="header">
+            <a href="#home" class="logo">EL <span>Fredericho</span></a>
+            <i class='bx bx-menu' id="menu-icon"></i>
+          
+            <div class="nav-group">
+              <nav class="navbar">
+                <a href="#home" class="active">Home</a>
+                <a href="#about">About</a>
+                <a href="#project">Project</a>
+                <a href="#contact">Contact</a>
+              </nav>
+              <div id="theme-toggle" class="theme-toggle">
+                <i class='bx bx-moon' id="theme-icon"></i>
+              </div>
+            </div>
+        </header>
+        <!-- NAVBAR END -->
+
+        <!-- HOME SECTION START -->
+        <section class="home" id="home">
+            <div class="home-content">
+                <h1>Hi, It's <span>Sultan</span></h1>
+                <h3 class="text-animation">I'm a <span></span></h3>
+                <p>I'm a tech student passionate about web development. I specialize in building responsive and engaging frontend websites using HTML, CSS, and JavaScript. Open to freelance projects and collaborations.</p>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/sultan-frederick-301173348?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank"><i class='bx bxl-linkedin'></i></a>
+                    <a href="https://github.com/EL-Fredericho" target="_blank"><i class='bx bxl-github'></i></a>
+                    <a href="https://www.instagram.com/elfredricho/" target="_blank"><i class='bx bxl-instagram'></i></a>
+                    <a href="https://www.tiktok.com/@elfredericho?_t=ZS-8wX4Nh86utk&_r=1" target="_blank"><i class='bx bxl-tiktok'></i></a>
+                </div>
+                <div class="btn-group">
+                    <a href="#" class="btn">Download CV</a>
+                    <a href="#contact" class="btn">Contact</a>
+                </div>
+            </div>
+                <div class="home-img">
+                    <img src="./img/Sultan.jpg" alt="">
+                </div>
+        </section>
+        <!-- HOME SECTION END -->
+
+        <!-- ABOUT SECTION START -->
+        <section class="about" id="about">
+          <h2 class="heading">About Me</h2>
+          <div class="about-container">
+            <div class="about-text">
+              <h3>Hi, I'm Sultan</h3>
+              <p>
+                  I'm an IT student passionate about web development. I began my journey through campus projects and now enjoy building clean, user-friendly websites.
+              </p>
+              <p>
+                  I'm currently learning HTML, CSS, JavaScript, and frameworks like React. I love making simple web projects to sharpen both my coding and design skills.
+              </p>
+              <p>
+                  I'm open to freelance work and collaboration to gain real-world experience. This portfolio helps me share my growth and connect with others.
+              </p>
+            </div>
+
+            <div class="education-timeline">
+              <h3 class="subheading">Education Timeline</h3>
+              <div class="timeline-items">
+                <div class="timeline-item">
+                  <div class="timeline-dot"></div>
+                  <div class="timeline-date">2020 - 2023 </div>
+                  <div class="timeline-content">
+                    <h3>High School</h3>
+                    <p>SMAS HUTAMA - Science Major</p>
+                  </div>
+                </div>
+                <div class="timeline-item">
+                  <div class="timeline-dot"></div>
+                  <div class="timeline-date">2023 - Now  </div>
+                  <div class="timeline-content">
+                    <h3>University</h3>
+                    <p>Universitas Indraprasta PGRI - Informatics Engineering </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- ABOUT SECTION END -->
+
+        <!-- PROJECT SECTION START -->
+        <section class="project" id="project">
+          <h2>My Projects</h2>
+          <div class="projects-container">
+            <!-- Project Card from Java -->
+          </div>
+        </section>
+        <!-- Modal for showing big images and details -->
+        <div class="modal-backdrop" role="dialog" aria-modal="true" aria-labelledby="modal-title" aria-describedby="modal-desc">
+          <div class="modal" role="document">
+            <span class="modal-close" aria-label="Close modal">&times;</span>
+            <div class="modal-left">
+              <div class="modal-big-image-container">
+                <img src="" alt="" id="modal-big-image" />
+              </div>
+              <nav class="image-nav" aria-label="Project image navigation">
+                <button class="nav-button" id="nav-prev" aria-label="Previous images">&lt;</button>
+                <div class="nav-thumbnails" id="nav-thumbnails">
+                  <!-- Thumbnails injected here -->
+                </div>
+                <button class="nav-button" id="nav-next" aria-label="Next images">&gt;</button>
+              </nav>
+            </div>
+            <div class="modal-right">
+              <h2 class="modal-title" id="modal-title"></h2>
+              <p class="modal-desc" id="modal-desc"></p>
+              <button class="btn-review" id="btn-review">Review Project</button>
+            </div>
+          </div>
+        </div>
+        <!-- PROJECT SECTION END -->
+
+        <!-- CONTACT SECTION START -->
+        <section class="contact" id="contact">
+          <h2>Contact Me</h2>
+          <form action="">
+            <div class="input-group">
+              <div class="input-box">
+                <input type="text" placeholder="Full Name">
+                <input type="email" placeholder="Email">
+              </div>
+              <div class="input-box">
+                <input type="tel" placeholder="Phone Number">
+                <input type="text" placeholder="Subject">
+              </div>
+            </div>
+
+            <div class="input-group-2">
+              <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
+              <input type="submit" value="Send Message" class="btn">
+            </div>
+          </form>
+        </section>
+        <!-- CONTACT SECTION END -->
+
+        <!-- FOOTBAR START -->
+        <footer class="footer">
+          <div class="social">
+            <a href="#"><i class='bx bxl-linkedin'></i></a>
+            <a href="#"><i class='bx bxl-github'></i></a>
+            <a href="#"><i class='bx bxl-instagram'></i></a>
+            <a href="#"><i class='bx bxl-twitter'></i></a>
+          </div>
+          <ul class="list">
+              <li>
+                <a href="#">About Me</a>
+              </li>
+              <li>
+                <a href="#">Projects</a>
+              </li>
+              <li>
+                <a href="#">Contact</a>
+              </li>
+          </ul>
+          <p class="copyright">
+            © 2025 Sultan Frederick (a.k.a. EL Fredericho) | All Rights Reserved.
+          </p>
+        </footer>
+        <!-- FOOTBAR END -->
+
+        <script src="script.js"></script>
+          
+    </body>
+</html>
